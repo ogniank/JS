@@ -1,0 +1,59 @@
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+/* JavaScript Challenge: adds padding between items after one has been deleted */
+.remove {
+    padding-bottom: 5px;
+}
+
+/* ===== CSS Challenge 1: center the todo entry point and task list ===== */
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers the items left to right */
+    margin: 0 auto;        /* centers the container on the page */
+    padding-bottom: 80px;  /* leaves room so the footer never covers the list */
+}
+
+/* Keeps the divider line full width inside the centered container */
+#todo-container hr {
+    width: 100%;
+}
+
+/* ===== CSS Challenge 2: footer with a border, stuck to the bottom of the page ===== */
+#footer {
+    position: fixed;       /* stays in place even when the page scrolls */
+    bottom: 0;             /* sticks to the very bottom of the window */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    font-size: 16px;
+}
